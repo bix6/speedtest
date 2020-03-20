@@ -1,0 +1,15 @@
+[Unit]
+Description=Speedtest Service
+After=network.target
+
+[Service]
+ExecStart=sh speedtest.sh
+WorkingDirectory=/home/pi/speedtest
+StandardOutput=inherit
+StandardError=inherit
+User=root
+Restart=always
+TimeoutSec=10
+
+[Install]
+WantedBy=multi-user.target
