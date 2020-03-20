@@ -16,8 +16,8 @@
 5. `rm speedtest.service`
 6. Confirm it's working then enable it:
     1. `sudo systemctl start speedtest.service`
-    2. `sudo systemctl stop speedtest.service`
-    3. `sudo systemctl enable speedtest.service`
+    2. `systemctl status speedtest`
+    3. `sudo systemctl stop speedtest.service`
+    4. `sudo systemctl enable speedtest.service`
     - To disable `sudo systemctl disable speedtest.service`
-    - Check status `systemctl status speedtest`
 7. `sudo reboot now`
